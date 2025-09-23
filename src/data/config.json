@@ -1,0 +1,39 @@
+{
+  "navbar": [
+    { "label": "Home", "path": "/" },
+    { "label": "About", "path": "/about" },
+    { "label": "Products", "items": [
+      { "label": "Electronics", "path": "/products/electronics" },
+      { "label": "Clothing", "path": "/products/clothing" },
+      { "label": "Accessories", "path": "/products/accessories" }
+    ]},
+    { "label": "Contact", "path": "/contact" }
+  ],
+  "footer": {
+    "links": [{ "label": "Privacy Policy", "path": "/privacy" },
+      { "label": "Terms of Service", "path": "/terms" },
+      { "label": "Help Center", "path": "/help" }
+    ],
+    "socials": [{ "platform": "Facebook", "url": "https://facebook.com" },
+      { "platform": "Twitter", "url": "https://twitter.com" },
+      { "platform": "Instagram", "url": "https://instagram.com" }
+    ],
+    "contact": {
+      "email": "contact@yourcompany.com",
+      "phone": "+1-800-123-4567",
+      "address": "1234 Market St, San Francisco, CA"
+    },
+    "text": "© 2025 Your Company. All rights reserved."
+  },
+  "theme": ["dark", "light", "warm", "cold"],
+  "fontFamily":"Arial, sans-serif",
+  "photos": {
+    "logo": "/uploads/logo.png",
+    "banner": "/uploads/banner.jpg",
+    "hero":[
+      "/uploads/hero1.jpg",
+      "/uploads/hero2.jpg",
+      "/uploads/hero3.jpg"
+    ]
+  }
+}
