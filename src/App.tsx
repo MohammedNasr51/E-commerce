@@ -15,7 +15,7 @@ function App() {
         </a>
       </div>
       <div className="bg-background text-foreground">
-        <button className="bg-primary text-white px-4 py-2 rounded border-2 border-border">
+        <button className="text-primary px-4 py-2 rounded border-2 border-border">
           Themed Button
         </button>
       </div>

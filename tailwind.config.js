@@ -8,6 +8,7 @@ export default {
         foreground: "var(--foreground)",
         primary: "var(--primary)",
         border: "var(--border)",
+        canceled: "var(--canceled)",
       },
     },
   },
