@@ -2,25 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Cairo';
+  src: url('../public/fonts/Cairo-VariableFont_slnt\,wght.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #111827;
-  --primary: #3b82f6;
-  --border: #e5e7eb;
+  --primary: #950101;
+  --border: #C5C5C5;
+  --canceled: #EEEEEE;
 }
 
 [data-theme="light"] {
   --background: #ffffff;
   --foreground: #111827;
-  --primary: #3b82f6;
-  --border: #e5e7eb;
+  --primary: #950101;
+  --border: #C5C5C5;
+  --canceled: #EEEEEE;
 }
 
 [data-theme="dark"] {
   --background: #111827;
   --foreground: #f9fafb;
-  --primary: #6366f1;
-  --border: #374151;
+  --primary: #AE0101;
+  --border: #D8D8D8;
+  --canceled: #A4A4A4;
+
 }
 
 [data-theme="warm"] {
