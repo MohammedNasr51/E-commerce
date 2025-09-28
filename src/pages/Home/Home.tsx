@@ -1,5 +1,3 @@
-// Home.tsx
-import NavBar from "../../components/NavBar/NavBar";
 import { useContext } from "react";
 import { ThemeContext } from "../../context/ThemeContext";
 import HeroSection from "../../components/HeroSection/HeroSection";
@@ -9,9 +7,8 @@ function Home() {
 
   return (
     <>
-      <NavBar />
       <HeroSection />
-           <div className="card h-96 mt-[300px]">
+        <div className="card h-96 mt-[100px]">
         <button onClick={() => setTheme("light")}>Light</button>
         <button onClick={() => setTheme("dark")}>Dark</button>
         <button onClick={() => setTheme("warm")}>Warm</button>

@@ -5,10 +5,12 @@ import "./i18n";
 import App from './App.tsx'
 import { BrowserRouter } from 'react-router-dom'
 import { ThemeProvider } from './context/ThemeContext.tsx'
+import ScrollToTop from './utils/ScrollToTop.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <BrowserRouter>
+    <ScrollToTop />
     <ThemeProvider>
     <App />
     </ThemeProvider>

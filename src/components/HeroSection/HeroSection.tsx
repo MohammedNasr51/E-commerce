@@ -7,7 +7,7 @@ import { heroImages } from "../../data/heroSectionData";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-[60vh] sm:h-[70vh] lg:h-[90vh] mt-24 relative bg-background">
+    <div className="w-full h-[60vh] sm:h-[70vh] lg:h-[90vh] relative bg-background">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         navigation
