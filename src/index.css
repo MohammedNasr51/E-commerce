@@ -52,9 +52,48 @@
   --primary: #0284c7;
   --border: #a5f3fc;
 }
+
+
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      max-width: 75rem;
+      margin-inline: auto;
+    }
+  }
+}
+
+
 @keyframes marquee {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .animate-marquee {
@@ -62,3 +101,64 @@
   width: max-content;
   animation: marquee 20s linear infinite;
 }
+
+/** * Swiper Custom Styles
+ */
+.group\/slider1 .swiper-button-prev,
+.group\/slider1 .swiper-button-next {
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+
+  .group\/slider1 .swiper-button-prev,
+  .group\/slider1 .swiper-button-next {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7f50;
+}
+
+.group\/productsSwiper .swiper-pagination-bullet {
+  background: var(--foreground);
+  opacity: 0.7;
+}
+
+.group\/productsSwiper .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+/* Hide default navigation buttons for products slider */
+.group\/productsSwiper .swiper-button-prev,
+.group\/productsSwiper .swiper-button-next {
+  display: none;
+}
+
+/* Custom navigation buttons styling */
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  color: var(--foreground);
+}
+
+/* Hide navigation buttons on mobile */
+@media (max-width: 768px) {
+
+  .swiper-button-prev-custom,
+  .swiper-button-next-custom {
+    display: none;
+  }
+}
+
+
+/** * Swiper Custom Styles
+ */
