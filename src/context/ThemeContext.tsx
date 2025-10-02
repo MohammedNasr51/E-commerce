@@ -14,8 +14,10 @@ export const ThemeContext = createContext<ThemeContextType>({
 export function ThemeProvider({ children }: { children: ReactNode }) {
   const [theme, setTheme] = useState("light");
 
+
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    document.body.className = `bg-background text-foreground transition-colors duration-300`;
   }, [theme]);
 
   return (

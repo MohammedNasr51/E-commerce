@@ -1,0 +1,58 @@
+import { ProductItem } from "../types/products";
+import productImage from "../assets/images/product.png";
+export const PRODUCTS: ProductItem[] = [
+  {
+    id: "1",
+    title: "ACTIV MEN'S BASKETBALL SHOES BLK*BLUE",
+    price: "EGP 3_120.0",
+    old_price: "EGP 4_120.0",
+    discount: 23,
+    type: "new",
+    imageUrl: productImage,
+  },
+  {
+    id: "2",
+    title: "ACTIV MEN'S BASKETBALL SHOES BLK*RED",
+    price: "EGP 3_120.0",
+    old_price: "EGP 4_120.0",
+    discount: 23,
+    type: "new",
+    imageUrl: productImage,
+  },
+  {
+    id: "3",
+    title: "ACTIV MEN'S BASKETBALL SHOES BLK*RED",
+    price: "EGP 3_120.0",
+    old_price: "EGP 4_120.0",
+    discount: 23,
+    type: "new",
+    imageUrl: productImage,
+  },
+  {
+    id: "4",
+    title: "ACTIV MEN'S BASKETBALL SHOES BLK*RED",
+    price: "EGP 3_120.0",
+    old_price: "EGP 4_120.0",
+    discount: 23,
+    type: "new",
+    imageUrl: productImage,
+  },
+  {
+    id: "5",
+    title: "ACTIV MEN'S BASKETBALL SHOES BLK*RED",
+    price: "EGP 3_120.0",
+    old_price: "EGP 4_120.0",
+    discount: 23,
+    type: "new",
+    imageUrl: productImage,
+  },
+  {
+    id: "6",
+    title: "ACTIV MEN'S BASKETBALL SHOES BLK*RED",
+    price: "EGP 3_120.0",
+    old_price: "EGP 4_120.0",
+    discount: 23,
+    type: "new",
+    imageUrl: productImage,
+  },
+];

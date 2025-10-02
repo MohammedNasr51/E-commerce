@@ -1,5 +1,8 @@
 {
   "welcome": "welcome",
   "logout": "logout",
-  "login": "login"
+  "login": "login",
+  "product":{
+    "select_options": "Select Options"
+  }
 }
