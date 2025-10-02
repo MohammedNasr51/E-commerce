@@ -10,8 +10,8 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <div className="card h-96 mt-[100px]">
-        <button onClick={() => setTheme("light")}>Light</button>
+      <div className="card h-96 mt-[100px] flex gap-4">
+        <button onClick={() => setTheme("light")} className="">Light</button>
         <button onClick={() => setTheme("dark")}>Dark</button>
         <button onClick={() => setTheme("warm")}>Warm</button>
         <button onClick={() => setTheme("cold")}>Cold</button>
