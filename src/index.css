@@ -4,7 +4,8 @@
 
 @font-face {
   font-family: 'Cairo';
-  src: url('../public/fonts/Cairo-VariableFont_slnt\,wght.ttf');
+  src: url('/fonts/Cairo-VariableFont_slnt,wght.ttf') format('truetype');
+  font-display: swap;
 }
 
 * {
