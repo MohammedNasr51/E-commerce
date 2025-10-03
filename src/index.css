@@ -54,6 +54,79 @@
   --border: #a5f3fc;
 }
 
+/* Custom Text Selection Styles */
+::selection {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+::-moz-selection {
+  background-color: var(--primary);
+  color: var(--background);
+}
+
+/* Custom Scrollbar Styles */
+/* Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 6px;
+  border: 2px solid var(--background);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--primary) 80%, black);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--background);
+}
+
+/* Firefox Scrollbar */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--background);
+}
+
+/* Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for elements with overflow */
+.scroll-styled {
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--background);
+}
+
+.scroll-styled::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.scroll-styled::-webkit-scrollbar-track {
+  background: var(--canceled);
+  border-radius: 4px;
+}
+
+.scroll-styled::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+.scroll-styled::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--primary) 80%, black);
+}
+
 
 @layer utilities {
   .container {
