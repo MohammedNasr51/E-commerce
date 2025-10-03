@@ -7,7 +7,7 @@ import { heroImages } from "../../data/heroSectionData";
 
 export default function HeroSection() {
   return (
-    <div className="w-full h-[60vh] sm:h-[70vh] lg:h-[90vh] relative bg-background">
+    <div className="w-full h-[60vh] sm:h-[70vh] lg:h-[90vh] relative bg-background overflow-hidden">
       <Swiper
         modules={[Navigation, Autoplay]}
         navigation
@@ -17,11 +17,13 @@ export default function HeroSection() {
       >
         {heroImages.map((img, index) => (
           <SwiperSlide key={index}>
-            <img
-              src={img}
-              alt={`Hero ${index + 1}`}
-              className="w-full h-full object-fill /*object-contain*/ md:object-cover"
-            />
+            <div className="w-full h-full flex items-center justify-center bg-background">
+              <img
+                src={img}
+                alt={`Hero ${index + 1}`}
+                className="w-full h-full object-fill md:object-cover"
+              />
+            </div>
           </SwiperSlide>
         ))}
       </Swiper>
