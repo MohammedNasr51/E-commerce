@@ -8,7 +8,7 @@ import Product from "./Product";
 
 export default function ProductsSection() {
   return (
-    <section className="py-10">
+    <section className="py-16">
       <div className="flex items-center justify-between mb-8 container">
         <h1 className="text-4xl text-foreground">
           Products
